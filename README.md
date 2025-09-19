@@ -17,41 +17,43 @@ The project comprises essential components:
 
 To run the project locally, follow these steps:
 
-1. **Clone the repository:**
+## How to Run Locally
 
+1. **Clone the repository**
 ```bash
-git clone https://github.com/SAURABHSINGHDHAMI/Plant-Disease-Detection.git
+git clone https://github.com/Pragya825/My-Project.git
+
 ```
 
 2. Navigate to the project directory:
+cd "My-Project"
 
-```bash
-cd Plant-Disease-Detection
-```
+
 
 3. **Install the required packages:**
 
-```bash
 pip install -r requirements.txt
-```
+
 
 4. **Run the Streamlit web application:**
 
-```bash
-streamlit run main_app.py
-```
+python app.py
+
 
 ## Usage 🌿
 
 Once the application is running, open your web browser and navigate to [http://localhost:8501](http://localhost:8501). Upload an image of a plant leaf, and the system will predict if it is affected by any disease.
 
-## Model Training 🧠
+## Model Training
 
-The model was trained using the `Plant_Disease_Detection.ipynb` notebook. It employs a Convolutional Neural Network architecture to classify plant images into different disease categories. The trained model weights are saved in `plant_disease_model.h5`.
+## Model Training
 
-## Web Application 🌐
+- Trained a Convolutional Neural Network (CNN) on a plant leaf dataset with healthy and diseased leaves.  
+- Preprocessed images (resizing, normalization, and data augmentation).  
+- Used Adam optimizer and Categorical Crossentropy loss for 25–30 epochs with batch size 32.  
+- Achieved ~92% accuracy on the validation set, successfully classifying multiple plant diseases.
+ 
 
-The web application (`main_app.py`) empowers users to interact with the trained model. Upload plant images, and the application provides real-time predictions regarding the health of the plant.
 
 ## Requirements 🛠️
 
